@@ -4,10 +4,11 @@
 ---
 The study of parabolic motion is a cornerstone in the field of classical mechanics, a branch of physics that deals with the motion of objects. This concept is rooted in the work of **[Galileo Galilei](https://es.wikipedia.org/wiki/Galileo_Galilei)** in the early 17th century, who was among the first to analyze the trajectory of projectiles and assert that, in the absence of air resistance, objects follow a parabolic path when thrown. This discovery laid the groundwork for Newton's laws of motion and the field of kinematics.
 
-
+<div align="center"
 <div style="width: 400px; height: 400px; overflow: hidden; margin: auto;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg/220px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei%2C_1636.jpg" alt="Galileo Galilei" style="height: 400px; max-width: 100%; margin: auto; display: block;box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);">
   <p><a href="https://es.wikipedia.org/wiki/Galileo_Galilei"><strong>Galileo Galilei</strong></a></p>
+</div>
 </div>
 
 
