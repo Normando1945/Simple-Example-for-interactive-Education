@@ -178,6 +178,120 @@ results = pd.DataFrame({'X [m]': x, 'Y [m]': y})
 results.head(len(results))
 ```
 
+3. **Finding the Maximum Height**
+
+  We search for the maximum y value in our dataset, which corresponds to the maximum height (max_Y) the projectile achieves.
+  
+```python 
+max_Y = np.max(results.iloc[1:,1])
+x_row = np.where(results['Y [m]'] == max_Y)
+x_row = x_row[0].tolist()
+x_value = results.iloc[x_row[0],0]
+print(x_value, max_Y)
+```
+
+4. **Plotting the Results**
+
+  A scatter plot is generated to visualize the trajectory. The point of maximum height is highlighted and labeled on the graph.
+
+```python 
+fig,ax = plt.subplots(figsize = (16/1.2,9/1.2))
+
+ax.plot(x, y, linewidth=1, marker='+', color=(0, 0, 0), markerfacecolor='w', markeredgewidth=0, alpha=0.8, label= 'Results')
+ax.scatter(x_value, max_Y, label=f'Max Y = {max_Y:.2f}  m')
+ax.set_title('Parabolic Motion', fontsize = 10, color = (0,0,1))
+ax.set_xlabel('X [m]')
+ax.set_ylabel('Y [m]')
+ax.set_xlim(0, max(x))
+ax.set_ylim(0, max(y)*1.05)
+ax.grid(which='both', axis = 'x', alpha=0.5)
+legend = ax.legend(loc='upper right', bbox_to_anchor=(1, 1), fontsize=9)
+legend.get_frame().set_edgecolor('none')
+```
+
+### **Conclusion**
+
+Through the application of physics equations and Python programming, we successfully model the projectile's parabolic path and determine its maximum height to be approximately 1.63 m. This approach can be extended to various projectile motion problems to predict trajectories and optimize launch parameters for desired outcomes.
+
+---
+## **Parabolic Motion Simulation with [P5js](https://p5js.org/)**
+---
+
+
+This **P5js** script simulates the parabolic trajectory of a projectile. The initial setup includes variables for position (`x`, `y`), angle (`phi`), gravity (`g`), and initial velocity (`vo`). It also prepares for user interaction with `inputVo` for velocity adjustment and a `buttonStart` to initiate the animation.
+
+In the `setup()` function, the canvas is created, and UI elements are positioned. Angle `phi` is converted from degrees to radians to work with trigonometric functions.
+
+The `draw()` function is responsible for animating the projectile's motion. It updates the projectile's position, draws its trajectory, and displays the current position (`x`, `y`) in meters. The projectile's x-position is incremented in each frame to simulate motion.
+
+A restart function `restartAnimation()` is included, allowing the user to reset the simulation with a new initial velocity.
+
+This code is a comprehensive example of integrating physics, user input, and animation in **P5js**, showcasing the dynamics of parabolic motion.
+
+For detailed implementation, please refer to the provided script in the **P5js** environment.
+
+
+* Link to the interactive animation
+
+  **[Animacion](https://editor.p5js.org/Normando1945/full/ZXJUz84sr)**
+
+* Link to the source code
+
+  **[Code](https://editor.p5js.org/Normando1945/sketches/ZXJUz84sr)**
+
+  ---
+# **Quiz Questions**
+---
+
+**1. How does the launch angle ($\theta$) affect a projectile's motion in terms of its parabolic trajectory?**
+
+   A) Increases the maximum height without altering the horizontal range.
+
+   B) Modifies the horizontal range without influencing the maximum height.
+
+   C) Affects both the maximum height and the horizontal range of the projectile.
+
+   D) Determines the initial velocity required to reach a specific target.
+
+**2. When the initial velocity of a projectile is doubled, how is its range affected in the absence of air resistance?**
+
+   A) It doubles, maintaining the same maximum height.
+
+   B) It quadruples, due to the proportional increase in both horizontal and vertical velocities.
+
+   C) It increases, but less than doubling due to the influence of gravity.
+   
+   D) Changes proportionally to the square of the initial velocity, significantly increasing the range.
+   
+**3. Which factor is not considered in the basic equations of parabolic motion?**
+
+   A) The influence of gravity on the projectile's trajectory.
+
+   B) The effect of the launch angle on the total distance traveled.
+
+   C) Air resistance and its effect on slowing down the projectile.
+
+   D) The initial velocity and its direct impact on the projectile's range and height.
+
+**4. At what launch angle is the range of a projectile maximized, ignoring air resistance?**
+
+   A) 30 degrees, favoring a higher altitude at the expense of range.
+
+   B) 45 degrees, optimally balancing maximum height and range.
+
+   C) 60 degrees, prioritizing height over horizontal range.
+
+   D) 90 degrees, resulting in the maximum possible height with no horizontal range.
+
+**5. Considering a projectile launched in an environment with no air resistance, which of the following statements about the initial velocity ($v_0$) is correct?**
+
+   A) A higher $v_0$ increases only the maximum height reached by the projectile.
+
+   B) The $v_0$ has no effect on the horizontal range of the projectile.
+
+   C) Increasing $v_0$ results in a proportional increase in both maximum height and horizontal range.
+   
+   D) Only specific values of $v_0$ allow the projectile to reach the highest point of its parabolic trajectory.
 
 
 
