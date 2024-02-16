@@ -217,9 +217,9 @@ Through the application of physics equations and Python programming, we successf
 ## **Parabolic Motion Simulation with [P5js](https://p5js.org/)**
 ---
 
-    <div align="center">
-        <img src= "https://github.com/Normando1945/Para-Profesores/assets/62081230/d6ab505c-7936-435c-9073-ba0927a9d6b8">
-    </div>
+<div align="center">
+   <img src= "https://github.com/Normando1945/Para-Profesores/assets/62081230/d6ab505c-7936-435c-9073-ba0927a9d6b8">
+</div>
 
 
 This **P5js** script simulates the parabolic trajectory of a projectile. The initial setup includes variables for position (`x`, `y`), angle (`phi`), gravity (`g`), and initial velocity (`vo`). It also prepares for user interaction with `inputVo` for velocity adjustment and a `buttonStart` to initiate the animation.
