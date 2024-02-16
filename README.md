@@ -142,8 +142,42 @@ A projectile is launched with an initial velocity `vo = 8 m/s` at a launch angle
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
+```
    We use `numpy` for numerical operations, `pandas` for data organization, and `matplotlib.pyplot` for visualization.
+
+2. **Defining Constants and Initial Conditions**
+
+  The initial velocity (vo), launch angle (phi), and acceleration due to gravity (g) are set. The launch angle is converted from degrees to radians for computational purposes.
+  
+```python  
+vo = 8                    # Initial velocity
+phi = np.radians(45)      # Launch angle with respect to the horizontal
+g = 9.80                  # Gravity acceleration
+```
+3. **Calculating the Trajectory**
+
+  Using the equation of motion for a projectile under gravity, we calculate the x and y positions at various time intervals within the expected flight duration.
+
+  $$ y = x \tan(\theta) - \frac{g x^2}{2 v_0^2 \cos^2(\theta)} $$
+  
+```python 
+x = []                                               # Initialize an empty list to store x-coordinates of the projectile
+y = []                                               # Initialize an empty list to store y-coordinates of the projectile
+
+# Loop over a range of x-values to calculate the corresponding y-values
+# using the projectile motion formula
+for xi in np.arange(0, 6.56, 0.04):                  # Start at x=0, end at x=6.56, with a step of 0.04
+    x.append(xi)                                     # Add the current x-value to the list of x-coordinates
+    # Calculate the y-value using the projectile equation and add it to the list of y-coordinates
+    y.append(xi * np.tan(phi) - (g * xi**2) / (2 * vo**2 * np.cos(phi)**2))
+
+# Create a DataFrame from the lists of x and y values with corresponding column labels
+results = pd.DataFrame({'X [m]': x, 'Y [m]': y})
+
+# Display the DataFrame showing all rows to view the trajectory data
+results.head(len(results))
+```
+
 
 
 
