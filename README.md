@@ -1,3 +1,10 @@
+# **Swift Guide to Utilizing Google Colab**
+
+##### Author:                 [Msc. Ing. Carlos Andrés Celi Sánchez](https://fragrant-knight-4af.notion.site/My-Personal-Page-for-Academic-Use-5c5f007b3f3f4c76a604960d9dbffca7).
+
+>##### Year:                   Feb - 2024
+
+
 # **Parabolic Motion: Mathematical Exploration**
 ---
 ## **Introduction**
