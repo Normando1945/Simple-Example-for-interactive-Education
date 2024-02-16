@@ -138,6 +138,11 @@ A projectile is launched with an initial velocity `vo = 8 m/s` at a launch angle
 
 1. **Importing Necessary Libraries**
 
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
    We use `numpy` for numerical operations, `pandas` for data organization, and `matplotlib.pyplot` for visualization.
 
 
