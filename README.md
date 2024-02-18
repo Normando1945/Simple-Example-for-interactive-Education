@@ -38,13 +38,13 @@ The equations governing the motion of a projectile are derived from the basic pr
 ---
 - **Horizontal Motion**: The horizontal position $x$ at any time $t$ can be found by integrating the horizontal velocity $v_{0x}$ over time, since velocity is the derivative of position with respect to time. Hence, the equation for horizontal motion is derived as:
 
-  $$ x = v_0 \cos(\theta) t $$
-
+$$ x = v_0 \cos(\theta) t $$
+  
   This equation indicates that the horizontal distance traveled by the projectile is directly proportional to the time elapsed and the horizontal component of the initial velocity.
 
 - **Vertical Motion**: The vertical position $y$ at any time $t$ is influenced by the initial vertical velocity $v_{0y}$ and the acceleration due to gravity. Integrating the vertical velocity over time gives the displacement, and considering the acceleration due to gravity yields:
 
-  $$ y = v_0 \sin(\theta) t - \frac{1}{2} g t^2 $$
+$$ y = v_0 \sin(\theta) t - \frac{1}{2} g t^2 $$
 
   This equation accounts for the upward initial velocity, reducing over time due to gravity, until the projectile starts descending, following a parabolic trajectory.
 
