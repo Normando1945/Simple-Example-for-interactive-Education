@@ -2,9 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-vo = 8                   # Initial velocity
-phi = np.radians(45)      # Launch angle with respect to the horizontal
-g = 9.80                  # Gravity acceleration
+vo = 8                                               # Initial velocity
+phi = np.radians(45)                                 # Launch angle with respect to the horizontal
+g = 9.80                                             # Gravity acceleration
 
 x = []                                               # Initialize an empty list to store x-coordinates of the projectile
 y = []                                               # Initialize an empty list to store y-coordinates of the projectile
