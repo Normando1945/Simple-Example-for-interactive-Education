@@ -1,9 +1,11 @@
+
+<div align="center">
+    <img src="https://github.com/Normando1945/Normando1945.github.io/assets/62081230/1ac0bf1d-67cd-43f6-87b0-141417a606db">
+</div>
+
+>##### Author:                 [Msc. Ing. Carlos Andrés Celi Sánchez](https://www.researchgate.net/profile/Carlos-Celi). & [Phd(c). MSc. Ing. José Poveda](https://www.torrefuerte.com)
+
 # **Swift Guide to Utilizing Google Colab**
-
-##### Author:                 [Msc. Ing. Carlos Andrés Celi Sánchez](https://fragrant-knight-4af.notion.site/My-Personal-Page-for-Academic-Use-5c5f007b3f3f4c76a604960d9dbffca7).
-
->##### Year:                   Feb - 2024
-
 
 # **For your Consideration** 
 The repository aims to utilize tools like Google Colab, Python, and P5js for engineering education, enhancing interactivity in mathematical concept learning. It allows early-semester students to interact with and enhance proposed codes in Google Colab, fostering active participation. This method promotes not only understanding but also deep and applied learning, preparing students for real-world challenges in their engineering careers.
