@@ -5,6 +5,10 @@
 >##### Year:                   Feb - 2024
 
 
+# ** For your Consideration ** 
+The repository aims to utilize tools like Google Colab, Python, and P5js for engineering education, enhancing interactivity in mathematical concept learning. It allows early-semester students to interact with and enhance proposed codes in Google Colab, fostering active participation. This method promotes not only understanding but also deep and applied learning, preparing students for real-world challenges in their engineering careers.
+
+
 # **Parabolic Motion: Mathematical Exploration**
 ---
 ## **Introduction**
