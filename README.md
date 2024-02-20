@@ -254,7 +254,7 @@ For detailed implementation, please refer to the provided script in the **P5js**
 
 * Link to the interactive animation
 
-  **[Animacion](https://editor.p5js.org/Normando1945/full/ZXJUz84sr)**
+  **[Animation](https://editor.p5js.org/Normando1945/full/ZXJUz84sr)**
 
 * Link to the source code
 
